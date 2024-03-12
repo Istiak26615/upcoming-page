@@ -2,7 +2,31 @@
 
 
 $(function () {
-"use strict";
+	"use strict";
+
+
+	// Get the form and popup elements
+	const form = document.getElementById('subscriptionForm');
+	const popup = document.getElementById('popup');
+
+	// Function to handle form submission
+	form.addEventListener('submit', function (event) {
+		event.preventDefault(); // Prevent form submission
+		showPopup(); // Show the popup
+	});
+
+	// Function to show the popup
+	function showPopup() {
+		popup.style.display = 'block';
+	}
+
+	// Function to close the popup
+	function closePopup() {
+		popup.style.display = 'none';
+	}
+
+
+
 
 
 	// data - background
@@ -54,7 +78,7 @@ $(function () {
 
 	//Countdown
 
-    $('[data-countdown]').each(function () {
+	$('[data-countdown]').each(function () {
 		var $this = $(this),
 			finalDate = $(this).data('countdown');
 		$this.countdown(finalDate, function (event) {
@@ -65,5 +89,5 @@ $(function () {
 	// WOW active
 	new WOW().init();
 
-});	
+});
 

@@ -34,6 +34,57 @@ button {
   cursor: pointer;
 }
 
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.form {
+  text-align: center;
+  color: white;
+}
+
+input[type="email"] {
+  width: 200px;
+  padding: 8px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.popup-content {
+  text-align: center;
+  color: white;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+
 a:focus,
 a:hover {
   text-decoration: none;
